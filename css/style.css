@@ -18,6 +18,11 @@ li{
 
 /* Utilities */
 
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .btn{
   display: inline-block;
   background-color: pink;
@@ -66,11 +71,11 @@ nav .nav-item ul li a:hover{
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 720px;
+
 }
 
 #banner h1{
-  font-size: 100px;
+  font-size: 5vw;
   font-weight: lighter;
   line-height: 1;
   align-self: center;
@@ -88,32 +93,40 @@ nav .nav-item ul li a:hover{
 
 /* Showcase */
 
-#best-seller {
+#showcase h2{
   text-align: center;
-  margin: 50px;
+  font-size: 2vw;
+  margin: 20px;
 }
 
-#best-seller h2{
-  font-size: 50px;
-  margin-bottom: 20px;
+#showcase>p{
+  text-align: center;
+  font-size: 1vw;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid pink;
 }
 
-#best-seller p{
-  border-bottom: 5px solid pink;
-  margin: 0px 700px;
-  padding: 10px 0px;
+#showcase .collection{
+display: grid;
+grid-template-columns: repeat(3,1fr);
+gap: 10px;
 }
 
-#best-seller .showcase ul{
-  display: flex;
-  justify-content: space-evenly;
+#showcase .item {
+  background-color: whitesmoke;
+  border:0px solid;
+  padding: 10px;
 }
 
-#best-seller .showcase ul li a img{
-  width: 500px;
-  height: 500px;
-  border-radius: 10px;
-  margin-top: 50px;
+#showcase .item img{
+  width: 100%;
 }
 
+#showcase .detail h3,p{
+  padding: 10px;
+}
 
+#showcase .item a{
+  margin-left: 5px;
+}
